@@ -1,0 +1,18 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+        for(i 1 to 5) {
+            Terminal.println("OK1")
+        }
+
+        for(i 0 until 5) {
+            Terminal.println("OK2")
+        }
+
+        for(i in [1, 2, 3, 4, 5]) {
+            Terminal.println("OK3")
+        }
+    }
+}

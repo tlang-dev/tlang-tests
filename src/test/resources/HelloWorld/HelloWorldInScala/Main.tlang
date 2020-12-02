@@ -1,0 +1,18 @@
+use io.Terminal
+use gen.Generator
+
+helper {
+
+    func main() {
+        Terminal.println(Generator.generate(helloWorld()))
+    }
+}
+
+tmpl[scala] helloWorld {
+    pkg "HelloWorld"
+
+    impl HelloWorld {
+        func main() {
+        }
+    }
+}

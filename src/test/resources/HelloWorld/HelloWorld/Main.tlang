@@ -1,0 +1,8 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+        Terminal.println("Hello, World !")
+    }
+}

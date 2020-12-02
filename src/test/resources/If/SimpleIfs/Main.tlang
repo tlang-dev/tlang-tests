@@ -1,0 +1,39 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+        if(1 == 1) {
+            Terminal.println("OK1")
+        }
+
+        if(true) {
+            Terminal.println("OK2")
+        }
+
+        if(1 < 2) {
+            Terminal.println("OK3")
+        }
+
+        if(2 > 1) {
+            Terminal.println("OK4")
+        }
+
+        if(2 >= 2) {
+            Terminal.println("OK5")
+        }
+
+        if(2 <= 2) {
+            Terminal.println("OK6")
+        }
+
+        if(1 != 2) {
+            Terminal.println("OK7")
+        }
+
+        if(1 == 2) {
+        } else {
+            Terminal.println("OK8")
+        }
+    }
+}
