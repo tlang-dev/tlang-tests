@@ -9,10 +9,11 @@ helper {
 }
 
 tmpl[scala] helloWorld {
-    pkg "HelloWorld"
+    pkg hello_world
 
     impl HelloWorld {
-        func main() {
+        func main(args: String[]) {
+            println("Hello, World!")
         }
     }
 }
