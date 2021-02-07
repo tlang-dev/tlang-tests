@@ -1,0 +1,18 @@
+use io.Terminal
+use gen.Generator
+
+helper {
+
+    func main() {
+        Terminal.println(Generator.generate(myTemplate("package1")))
+    }
+}
+
+tmpl[java] myTemplate(pkgName) {
+    pkg ${pkgName}
+
+    impl MyClass {
+        func[public static] main(args: String[]) {
+        }
+    }
+}
