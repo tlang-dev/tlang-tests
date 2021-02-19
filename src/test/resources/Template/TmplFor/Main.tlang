@@ -1,0 +1,43 @@
+use io.Terminal
+use gen.Generator
+
+helper {
+
+    func main() {
+        Terminal.println(Generator.generate(myTemplate(user)))
+    }
+}
+
+model {
+
+    set Field {
+        name String
+    }
+
+    set Entity {
+        package String
+        id String
+        name String
+        fields Field[]
+    }
+
+    let user: Entity = {
+        package="dev.tlang.test"
+        id="entity1"
+        name="User"
+        fields [{name "Field1"},{name "Field2"},{name "Field3"}]
+    }
+
+}
+
+tmpl[java] myTemplate(entity Entity) {
+    pkg ${entity.package}
+
+    impl MyClass {
+        <<forEach(entity.fields, myField(_))>>
+    }
+}
+
+tmpl[java] myField(field Field) {
+    var[private] ${field.name}: String
+}

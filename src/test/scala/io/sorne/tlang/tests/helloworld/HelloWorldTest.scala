@@ -1,6 +1,6 @@
 package io.sorne.tlang.tests.helloworld
 
-import io.sorne.tlang.runner.RunMain
+import dev.tlang.tlang.runner.RunMain
 import org.scalatest.funsuite.AnyFunSuite
 
 class HelloWorldTest extends AnyFunSuite {

@@ -1,6 +1,6 @@
 package io.sorne.tlang.tests.packager
 
-import io.sorne.tlang.bagman.Packager
+import dev.tlang.tlang.bagman.Packager
 import org.scalatest.funsuite.AnyFunSuite
 
 import java.io.{FileInputStream, InputStream}

@@ -6,6 +6,6 @@ scalaVersion := "2.13.4"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % Test
 
-lazy val core = RootProject(file("../io.sorne.tlang"))
+lazy val core = RootProject(file("../tlang"))
 
 val main = Project(id = "TLangTests", base = file(".")).dependsOn(core)
