@@ -25,7 +25,7 @@ model {
         package="dev.tlang.test"
         id="entity1"
         name="User"
-        fields [{name "Field1"},{name "Field2"},{name "Field3"}]
+        fields=[{name="Field1"},{name="Field2"},{name="Field3"}]
     }
 
 }
@@ -34,7 +34,7 @@ tmpl[java] myTemplate(entity Entity) {
     pkg ${entity.package}
 
     impl MyClass {
-        <<forEach(entity.fields, myField(_))>>
+        <<forEach(entity.fields, &myField(_))>>
     }
 }
 
