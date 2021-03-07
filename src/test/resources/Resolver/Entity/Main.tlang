@@ -1,0 +1,20 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+
+    }
+}
+
+model {
+
+    set MyEntity {
+        id String
+        active Bool
+    }
+
+    let myEntity: MyEntity = {
+        id="myId"
+    }
+}
