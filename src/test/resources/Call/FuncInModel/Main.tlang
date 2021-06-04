@@ -1,0 +1,22 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+        myEntity.myFunc("Hello, ")
+    }
+
+    func myEndFunc(var1 String, var2 String) {
+        Terminal.println(var1 + var2)
+    }
+}
+
+model {
+
+    set myModel {
+        myFunc: &myEndFunc(_, "World!")
+    }
+
+    let myEntity: myModel = {
+    }
+}

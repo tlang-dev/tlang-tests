@@ -5,15 +5,15 @@ import org.scalatest.funsuite.AnyFunSuite
 
 class HelloWorldTest extends AnyFunSuite {
 
-  val output = new java.io.ByteArrayOutputStream
-
   test("Hello World") {
+    val output = new java.io.ByteArrayOutputStream
     val file = getClass.getResource("/HelloWorld/HelloWorld")
     Console.withOut(output)(RunMain.runDir(file.getPath))
     assert("Hello, World !\n" == output.toString)
   }
 
   test("Hello World In Scala") {
+    val output = new java.io.ByteArrayOutputStream
     val res =
       """package hello_world
         |
