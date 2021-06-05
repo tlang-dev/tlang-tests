@@ -6,7 +6,7 @@ helper {
         myEntity.myFunc("Hello, ")
     }
 
-    func myEndFunc(var1 String, var2 String) {
+    func myEndFunc(var1: String, var2: String) {
         Terminal.println(var1 + var2)
     }
 }
