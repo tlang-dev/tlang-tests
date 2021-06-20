@@ -1,0 +1,8 @@
+name: SimpleInjection
+project: IntegrationTests
+organisation: TLang
+version: 1.0.0
+stability: alpha
+releaseNumber: 1
+dependencies:
+  - TLang/IO/Terminal 1.0.0:alpha:1 io

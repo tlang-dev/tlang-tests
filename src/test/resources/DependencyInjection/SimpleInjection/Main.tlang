@@ -1,0 +1,26 @@
+use io.Terminal
+
+helper {
+
+    func main() {
+        myEntity.myFunc("World!")
+    }
+
+    func injectedData(): String {
+        "Hello, "
+    }
+
+    func myEndFunc(part2: String)(part1: String) {
+        Terminal.println(part1 + part2)
+    }
+}
+
+model {
+
+    set myModel {
+        myFunc: &myEndFunc(_)(injectedData())
+    }
+
+    let myEntity: myModel = {
+    }
+}
